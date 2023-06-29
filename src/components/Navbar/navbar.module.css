@@ -2,13 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(
-    to right,
-    #fff5ec 0%,
-    #fff5ec 70%,
-    #fe043c 70%,
-    #fe043c 100%
-  );
 }
 .linkContainer {
   display: flex;

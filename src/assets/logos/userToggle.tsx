@@ -11,7 +11,7 @@ const UserToggle = () => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <rect width="10" height="5" fill="#E5E5E5" />
-        <g id="Food Landing Page_Web_1920" clip-path="url(#clip0_0_1)">
+        <g id="Food Landing Page_Web_1920" clipPath="url(#clip0_0_1)">
           <rect
             width="1920"
             height="8574"

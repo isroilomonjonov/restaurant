@@ -1,0 +1,118 @@
+.container {
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #fff5ec 0%,
+    #fff5ec 70%,
+    #fe043c 70%,
+    #fe043c 100%
+  );
+}
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 5rem 12rem;
+}
+.main {
+  color: #2e266f;
+  font-size: 20rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+  opacity: 0.05000000074505806;
+}
+.title {
+  color: #2e266f;
+  font-size: 7rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 9rem;
+  text-transform: capitalize;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: url("../../assets/images/backgroundDots.png"),
+    url("../../assets/images/backgroundDots.png");
+  background-repeat: no-repeat;
+  background-position: right bottom, left top;
+}
+.right img {
+  width: 530px;
+  height: 530px;
+  border-radius: 50%;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+}
+.searchContainer input {
+  width: 60%;
+  padding: 2rem;
+  color: #2e266f;
+  font-size: 1.8rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+}
+.searchContainer div {
+  background-color: #fff;
+  padding: 0.3rem;
+}
+.searchContainer button {
+  border-radius: 6rem 0rem 0rem 0rem;
+  background: #fe043c;
+  padding: 1rem 7rem;
+  flex-shrink: 0;
+  border: none;
+  color: #fff;
+  font-size: 3rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.buttons {
+  position: absolute;
+  left: 80%;
+  top: 10%;
+  cursor: pointer;
+}
+.anime {
+  transition: all 2s ease-in-out;
+  animation-name: example;
+  animation-duration: 2s;
+}
+@keyframes example {
+  0% {
+    transform: rotateZ(0deg);
+    width: 530px;
+    height: 530px;
+  }
+  40% {
+    width: 450px;
+    height: 450px;
+  }
+  100% {
+    transform: rotateZ(360deg);
+    width: 530px;
+    height: 530px;
+  }
+}
