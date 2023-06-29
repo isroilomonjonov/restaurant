@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(
+    to right,
+    #fff5ec 0%,
+    #fff5ec 70%,
+    #fe043c 70%,
+    #fe043c 100%
+  );
+}
+.linkContainer {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.link {
+  color: #2e266f;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: normal;
+}
+.link:hover {
+  opacity: 0.7;
+}
+.user {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+}
+.close {
+  max-height: 0;
+  max-width: 0;
+}
+.panel {
+  top: 120%;
+  max-height: 500px;
+  position: absolute;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.mainText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 0.5rem;
+}
