@@ -2,6 +2,7 @@ import { FoodCard } from "@/components/FoodCard/foodCard";
 import Hero from "@/components/Hero/Hero";
 import { SeeMore } from "@/components/SeeMore/seeMore";
 import styles from "@/styles/page.module.css";
+import Image from "next/image";
 const foodCardData = [
   {
     id: "1",
@@ -19,7 +20,6 @@ const foodCardData = [
     location: "Saheb Bazar",
     img: "burgerImg.png",
   },
-
 ];
 export default function Home() {
   return (
@@ -40,12 +40,36 @@ export default function Home() {
             adipiscing elit. Est, adipiscing cursus auctor eget sed.
           </p>
         </div>
-        <div className={`${styles.foods}`}> 
+        <div className={`${styles.foods}`}>
           {foodCardData.map((e) => (
             <FoodCard key={e.id} data={e} />
           ))}
-          <SeeMore/>
+          <SeeMore />
         </div>
+      </div>
+      <div className={`${styles.booking}`}>
+        <Image
+          className={`${styles.bookingLeftLettuce}`}
+          width={1000}
+          height={1000}
+          src={"/bookingLeftLettuce.png"}
+          alt="lettuce"
+        />
+        <div className={`${styles.bookingMain}`}>
+          <div className={`${styles.bookingRedDiv}`}></div>
+          <h2 className={`${styles.bookingMainTitle}`}>advance booking</h2>
+          <div className={`${styles.bookingInputDiv}`}>
+            <input placeholder="search restrurent" type="text" />
+            <button>GO</button>
+          </div>
+        </div>
+        <Image
+          className={`${styles.bookingRightLettuce}`}
+          width={1000}
+          height={1000}
+          src={"/bookingRightLettuce.png"}
+          alt="lettuce"
+        />
       </div>
     </>
   );
