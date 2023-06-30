@@ -1,0 +1,68 @@
+.box {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor:pointer;
+  }
+  
+  .box .see-more-wrapper {
+    border: 0px none;
+    height: 75px;
+    position: relative;
+    width: 111px;
+  }
+  
+  .box .see-more {
+    width: 113px;
+  }
+  
+  .box .overlap-group {
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 98px;
+  }
+  
+  .box .line {
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 19px;
+    width: 72px;
+  }
+  
+  .box .ellipse {
+    background-color: #fe043c;
+    border-radius: 20px;
+    height: 40px;
+    left: 58px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+  }
+  
+  .box .curousel {
+    height: 22px;
+    left: 72px;
+    position: absolute;
+    top: 9px;
+    width: 12px;
+  }
+  
+  .box .text-wrapper {
+    color: #fe043c;
+    font-family: "Poppins", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    height: 15px;
+    left: 44px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 60px;
+    white-space: nowrap;
+    width: 67px;
+  }
+  
