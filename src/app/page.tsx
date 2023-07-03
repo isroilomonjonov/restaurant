@@ -1,9 +1,11 @@
+import GooglePlay from "@/assets/logos/googlePlay";
 import { FoodCard } from "@/components/FoodCard/foodCard";
 import FoodCard2 from "@/components/FoodCard2/foodCard2";
 import Hero from "@/components/Hero/Hero";
 import { SeeMore } from "@/components/SeeMore/seeMore";
 import styles from "@/styles/page.module.css";
 import Image from "next/image";
+import PlayStore from "./../assets/logos/playStore";
 const foodCardData = [
   {
     id: "1",
@@ -89,6 +91,57 @@ export default function Home() {
           <FoodCard2 />
           <FoodCard2 />
           <FoodCard2 />
+        </div>
+      </div>
+      <div className={`${styles.downloadSection}`}>
+        <div className={`${styles.downloadSectionLeft}`}>
+          <div className={`${styles.downloadSectionRightMain}`}>
+            <div></div>
+            <h2>Download app for Exciting Deals</h2>
+          </div>
+          <p className={`${styles.p}`}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+            adipiscing cursus auctor eget sed phasellus senectus. Ut tellus
+            donec vestibulum tristique leo bibendum in a, tincidunt.{" "}
+          </p>
+          <div className={`${styles.downloadSectionDownloadContainer}`}>
+            <div className={`${styles.downloadSectionDownload}`}>
+              <GooglePlay />
+              <div className={`${styles.downloadSectionMain}`}>
+                <p className={`${styles.downloadSectionMainFirst}`}>
+                  GET IT ON
+                </p>
+                <p className={`${styles.downloadSectionMainLast}`}>
+                  Google Play
+                </p>
+              </div>
+            </div>
+            <div className={`${styles.downloadSectionDownload}`}>
+              <PlayStore />
+              <div className={`${styles.downloadSectionMain}`}>
+                <p className={`${styles.downloadSectionMainFirst}`}>
+                  Download on the
+                </p>
+                <p className={`${styles.downloadSectionMainLast}`}>App Store</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={`${styles.downloadSectionLeft}`}>
+          <Image
+            className={`${styles.downloadSectionLeftPhone}`}
+            src={"/phone.png"}
+            width={1000}
+            height={1000}
+            alt={""}
+          />
+          <Image
+            className={`${styles.downloadSectionLeftLettuce}`}
+            src={"/bookingRightLettuce.png"}
+            width={1000}
+            height={1000}
+            alt={""}
+          />
         </div>
       </div>
     </>
