@@ -1,4 +1,5 @@
 import { FoodCard } from "@/components/FoodCard/foodCard";
+import FoodCard2 from "@/components/FoodCard2/foodCard2";
 import Hero from "@/components/Hero/Hero";
 import { SeeMore } from "@/components/SeeMore/seeMore";
 import styles from "@/styles/page.module.css";
@@ -47,7 +48,7 @@ export default function Home() {
           <SeeMore />
         </div>
       </div>
-      <div className={`${styles.booking}`}>
+      <div className={`${styles.bookingSection}`}>
         <Image
           className={`${styles.bookingLeftLettuce}`}
           width={1000}
@@ -70,6 +71,25 @@ export default function Home() {
           src={"/bookingRightLettuce.png"}
           alt="lettuce"
         />
+      </div>
+      <div className={`${styles.foodsSection}`}>
+        <div className={`${styles.foodsMain}`}>
+          <h2>Explore Our Foods</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+            adipiscing cursus auctor eget sed phasellus senectus. Ut tellus
+            donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat
+            metus id amet.
+          </p>
+        </div>
+        <div className={`${styles.foodCardContainer}`}>
+          <FoodCard2 />
+          <FoodCard2 />
+          <FoodCard2 />
+          <FoodCard2 />
+          <FoodCard2 />
+          <FoodCard2 />
+        </div>
       </div>
     </>
   );
