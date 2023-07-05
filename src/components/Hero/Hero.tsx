@@ -14,12 +14,12 @@ const Hero = () => {
     {
       id: 2,
       name: "FoodName1",
-      src: "/img3.jpg",
+      src: "/burgerImg.png",
     },
     {
       id: 3,
       name: "FoodName2",
-      src: "/img2.jpg",
+      src: "/foodIMG.png",
     },
   ]);
   const [id, setId] = useState(arr[0].id);
@@ -58,20 +58,20 @@ const Hero = () => {
         <div className={`${styles.right}`}>
           <div className={`${styles.imgContainer}`}>
             {arr.map(
-            (e) =>
-              e.id === id && (
-                <Image
-                  className={`${styles.anime}`}
-                  key={e.id}
-                  src={e.src}
-                  alt="food"
-                  width={1000}
-                  height={1000}
-                />
-              )
-          )}
+              (e) =>
+                e.id === id && (
+                  <Image
+                    className={`${styles.anime}`}
+                    key={e.id}
+                    src={e.src}
+                    alt="food"
+                    width={1000}
+                    height={1000}
+                  />
+                )
+            )}
           </div>
-          
+
           <div className={`${styles.buttons}`}>
             <Carousel prev={prev} next={next} />
           </div>

@@ -1,0 +1,97 @@
+.footer {
+  height: 100vh;
+  background: #fff5ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+.footer img{
+    width: 45rem;
+    height: 76rem;
+    flex-shrink: 0;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+.footer h2 {
+  display: flex;
+  width: 53.4rem;
+  height: 9rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #2e266f;
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.8rem;
+  text-transform: capitalize;
+}
+.footerP {
+  color: #707070;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-transform: capitalize;
+  display: flex;
+  width: 53.3rem;
+  height: 4.4rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  width: 54.4rem;
+  height: 9rem;
+  flex-shrink: 0;
+  border-radius: 10rem;
+  background: #fff;
+  box-shadow: 2px 2px 30px 2px #fff5ec;
+}
+.inputContainer input {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 6rem;
+  border-radius: 10rem;
+  border: none;
+  outline: none;
+}
+.inputContainer button {
+  width: 5.6rem;
+  height: 5.6rem;
+  flex-shrink: 0;
+  border-radius: 5.6rem;
+  background: #fe043c;
+  border: none;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+.ul {
+  display: flex;
+  gap: 1.5rem;
+}
+.ul li {
+  color: #707070;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.ul li:hover{
+  opacity: 0.7;
+
+}

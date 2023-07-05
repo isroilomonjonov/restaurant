@@ -6,6 +6,7 @@ import { SeeMore } from "@/components/SeeMore/seeMore";
 import styles from "@/styles/page.module.css";
 import Image from "next/image";
 import PlayStore from "./../assets/logos/playStore";
+import Footer from "@/components/Footer/footer";
 const foodCardData = [
   {
     id: "1",
@@ -144,6 +145,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
