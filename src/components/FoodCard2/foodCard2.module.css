@@ -53,3 +53,11 @@
   font-weight: 700;
   text-transform: capitalize;
 }
+@media (max-width:600px) {
+  .imgContainer{
+    width: 32rem;
+  }
+  .textContainer{
+    width: 32rem;
+  }
+}

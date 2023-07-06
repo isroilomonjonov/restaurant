@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .first {
   display: flex;
@@ -46,8 +47,48 @@
 .foods {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 2rem;
   padding-top: 5rem;
   flex-wrap: wrap;
+}
+.foodsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 700px) {
+  .firstDiv p {
+    margin-top: 1rem;
+    color: #707070;
+    font-size: 1.4rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+    display: flex;
+    width: 100%;
+    height: 14.2rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .first p {
+    color: #2e266f;
+    font-family: Poppins;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4.8rem;
+    text-transform: capitalize;
+    display: flex;
+    width: 36.4rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+  }
 }
 
 /* Booking section*/
@@ -96,13 +137,15 @@
   text-transform: lowercase;
 }
 .bookingInputDiv {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #fff;
   box-shadow: 2px 2px 30px 2px #fff5ec;
 }
 .bookingInputDiv input {
   outline: none;
-  width: 54.4rem;
+  width: 40.4rem;
   height: 9rem;
   padding: 4rem;
   flex-shrink: 0;
@@ -116,9 +159,6 @@
   border: none;
 }
 .bookingInputDiv button {
-  left: 68%;
-  top: 7%;
-  position: absolute;
   padding: 2rem 6rem;
   flex-shrink: 0;
   background: #fe043c;
@@ -130,6 +170,29 @@
   font-weight: 600;
   text-transform: uppercase;
   border: none;
+}
+
+@media (max-width: 955px) {
+  .bookingRightLettuce {
+    display: none;
+  }
+  .bookingLeftLettuce {
+    display: none;
+  }
+  .bookingMain {
+    width: 100%;
+  }
+}
+@media (max-width: 530px) {
+  .bookingInputDiv input {
+    width: 27.3rem;
+    height: 5.1rem;
+    flex-shrink: 0;
+  }
+  .bookingInputDiv button {
+    padding: 1rem 3rem;
+    flex-shrink: 0;
+  }
 }
 
 /* Foods section*/
@@ -172,13 +235,57 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-/* Foods section*/
+@media (max-width: 700px) {
+  .foodsMain p {
+    color: #707070;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+    display: flex;
+    width: 51.4rem;
+    height: 6.5rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .foodsMain h2 {
+    color: #2e266f;
+    font-size: 3.6rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 6.2rem;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 500px) {
+  .foodsMain p {
+    color: #707070;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+    display: flex;
+    width: 100%;
+    height: 6.5rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+}
+/* Download section*/
 .downloadSection {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background: #ffedde;
 }
 .downloadSectionLeft {
@@ -223,8 +330,7 @@
   line-height: 6.2rem;
   text-transform: capitalize;
   display: flex;
-  width: 47.5rem;
-  height: 12.2rem;
+  /* max-width: 47.5rem; */
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
@@ -249,19 +355,19 @@
   flex-shrink: 0;
 }
 .downloadSectionDownloadContainer {
-  margin-top: 3rem; 
+  margin-top: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:2rem;
+  gap: 2rem;
 }
 .downloadSectionDownload {
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap:2rem;
+  gap: 2rem;
   flex-shrink: 0;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   flex-shrink: 0;
   border-radius: 1rem;
   background: #000;
@@ -273,7 +379,7 @@
   flex-direction: column;
 }
 .downloadSectionMainFirst {
-  color: #FFF;
+  color: #fff;
   font-size: 1.2rem;
   font-family: Poppins;
   font-style: normal;
@@ -282,11 +388,68 @@
   text-transform: capitalize;
 }
 .downloadSectionMainLast {
-  color: #FFF;
+  color: #fff;
   font-size: 1.8rem;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   line-height: 2.4rem;
   text-transform: capitalize;
+}
+
+@media (max-width: 916px) {
+  .downloadSection {
+    flex-direction: column;
+  }
+  .downloadSectionLeft {
+    padding-top: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .downloadSectionLeftLettuce {
+    width: 34.8755rem;
+    height: 35.3906rem;
+    transform: rotate(-15.334deg);
+    flex-shrink: 0;
+  }
+  .downloadSectionLeft img {
+    position: static;
+  }
+  .downloadSectionLeftLettuce {
+    display: none;
+  }
+  .downloadSectionRightMain h2 {
+    display: flex;
+    width: 35rem;
+    height: 7.9rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #2e266f;
+    font-family: Poppins;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4.8rem;
+    text-transform: capitalize;
+  }
+  .downloadSectionRightMain {
+    gap: 1rem;
+  }
+  .downloadSectionLeft .p {
+    display: flex;
+    width: 34.9rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #707070;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+  }
 }

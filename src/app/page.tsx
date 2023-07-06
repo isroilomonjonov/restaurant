@@ -44,12 +44,14 @@ export default function Home() {
             adipiscing elit. Est, adipiscing cursus auctor eget sed.
           </p>
         </div>
-        <div className={`${styles.foods}`}>
+        <div className={`${styles.foodsContainer}`}>
+          <div className={`${styles.foods}`}>
           {foodCardData.map((e) => (
             <FoodCard key={e.id} data={e} />
           ))}
-          <SeeMore />
+        </div><SeeMore />
         </div>
+        
       </div>
       <div className={`${styles.bookingSection}`}>
         <Image

@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
     to right,
     #fff5ec 0%,
@@ -100,15 +100,12 @@
   animation-name: example;
   animation-duration: 2s;
 }
-.imgContainer{
+.imgContainer {
   border-radius: 50%;
-
 }
 @keyframes example {
   0% {
     transform: rotateZ(0deg);
-    width: 530px;
-    height: 530px;
   }
   /* 40% {
     width: 450px;
@@ -116,7 +113,97 @@
   } */
   100% {
     transform: rotateZ(360deg);
-    width: 530px;
-    height: 530px;
   }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    background: linear-gradient(
+      to right,
+      #fff5ec 0%,
+      #fff5ec 60%,
+      #fe043c 60%,
+      #fe043c 100%
+    );
+  }
+  .hero {
+    flex-direction: column;
+    padding: 0rem 0rem;
+  }
+  .main {
+    color: #2e266f;
+    font-size: 10rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    opacity: 0.05000000074505806;
+    text-transform: capitalize;
+  }
+  .title {
+    color: #2e266f;
+    font-size: 3.6rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.8rem;
+    text-transform: capitalize;
+    display: flex;
+    width: 38.3rem;
+    height: 8.4rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .right {
+    margin-top: 3rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+    background: url("../../assets/images/backgroundDots.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  .right img {
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    align-items: start;
+    padding: 2rem;
+  }
+  .right img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+  .searchContainer{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .searchContainer input {
+    width:100%;
+  }
+}
+@media (max-width: 400px) {
+  .title {
+    color: #2e266f;
+    font-family: Poppins;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.8rem;
+    text-transform: capitalize;
+    display: flex;
+    width: 33.3rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
 }
