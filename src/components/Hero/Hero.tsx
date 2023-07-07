@@ -14,12 +14,12 @@ const Hero = () => {
     {
       id: 2,
       name: "FoodName1",
-      src: "/burgerImg.png",
+      src: "/image.webp",
     },
     {
       id: 3,
       name: "FoodName2",
-      src: "/foodIMG.png",
+      src: "/image.webp",
     },
   ]);
   const [id, setId] = useState(arr[0].id);
