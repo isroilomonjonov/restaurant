@@ -100,3 +100,22 @@
     width: 100%;
   }
 }
+@media (max-width:434px){
+  .element {
+    width: 36rem;
+    height: 38rem;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .rectangle {
+    width: 36rem;
+  }
+  .book-now-btn {
+    width: 14rem;
+    height: 3.4615rem;
+    flex-shrink: 0;
+  }
+  .we-are-all-about-we {
+    width: 100%;
+  }
+}

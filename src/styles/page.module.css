@@ -90,7 +90,23 @@
     flex-shrink: 0;
   }
 }
-
+@media (max-width: 405px) {
+  .first p {
+    color: #2e266f;
+    font-family: Poppins;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 4.8rem; */
+    text-transform: capitalize;
+    display: flex;
+    width: 28.4rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+  }
+}
 /* Booking section*/
 .bookingSection {
   background: #ffedde;
@@ -398,6 +414,9 @@
 }
 
 @media (max-width: 916px) {
+  .downloadSectionLeftPhone {
+    width: 100%;
+  }
   .downloadSection {
     flex-direction: column;
   }
@@ -451,5 +470,13 @@
     font-weight: 400;
     line-height: 2.4rem;
     text-transform: capitalize;
+  }
+}
+@media (max-width: 380px) {
+  .downloadSectionRightMain h2 {
+    width: 30rem;
+  }
+  .downloadSectionLeft .p {
+    margin-top: 2rem;
   }
 }
